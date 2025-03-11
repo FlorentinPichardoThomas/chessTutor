@@ -9,7 +9,11 @@ declare global {
   }
 }
 
-
+const backgroundIMG =[
+  {
+    url: 'https://cdn.leonardo.ai/users/a482cc8c-f5e8-4326-8038-82c383032a5a/generations/ebe27154-771f-4505-9148-cdca44c52252/Leonardo_Phoenix_09_a_highly_detailed_expressive_and_vibrant_r_0.jpg?w=512',
+  }
+]
 function App() {
   const [count, setCount] = useState(0)
   
@@ -23,7 +27,7 @@ function App() {
         window.voiceflow.chat.load({
           verify: { projectID: '675435111d02b009ae3179cc' },
           url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production'
+          versionID: 'public'
         })
       }
     }
@@ -37,26 +41,10 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1 className='dText'>I'm a better reviewer of chess games than the coaches at chess.com</h1>
+      <h2 className='dText'>Click the button by the bottom right corner to see for yourself</h2>
+      <h3 className='dText'>Powered by ChatGPT, and Voiceflow</h3>
+      
     </>
   )
 }
